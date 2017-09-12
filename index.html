@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Jason You">
 	<meta name="description" content="Demo online shoppint site">
-	<title>Project 1</title>
+	<title>MyPort</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
 	<script src="https://use.fontawesome.com/6e867a0158.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
@@ -19,25 +20,28 @@
 			<span>PORT</span>
 		</a>
 		<ul class="sitenav">
-			<li><a href="">Home</a></li>
-			<li><a href="">Projects</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Services</a></li>
-			<li><a href="">Blog</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#aboutMeId">About</a></li>
+			<li><a href="#projectsId">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#social">Social</a></li>
 		</ul>
 	</nav>
 	<!-- introduction -->
 	<header id="intro">
 		<h1>CREATE YOUR PERSONAL PORTFOLIO</h1>
-		<button type="button">SCROLL DOWN</button>
+		<a href="#aboutMeId"><button type="button">SCROLL DOWN</button></a>
 	</header>
+	<!-- About Me -->
+	<span class="anchor" id="aboutMeId"></span>
 	<section id="explore">
 		<h1>ABOUT ME</h1>
 		<P>Lorem ipsum dolor sit amet, aliquam duis nunc vivamus interdum tortor, metus proin duis sed fermentum sem, tortor vestibulum ipsum non ut neque. Urna est bibendum proin ut enim, quis elit magnam non mi dolor mollis, a neque odio ultrices ut amet, quisque sagittis lacus magna tempor semper sequi. Imperdiet elit feugiat magna sociis vivamus ut, posuere ipsum wisi hendrerit pellentesque curabitur, varius molestie quisque ridiculus maecenas consectetuer, tristique eros parturient lorem porta ullamcorper.
 		</P>
-		<button type="button">PROJECTS</button>
+		<a href="#projectsId"><button type="button">PROJECTS</button></a>
 	</section>
 	<!-- Projects -->
+	<span class="anchor" id="projectsId"></span>
 	<section id="projects">
 		<!-- Left -->
 		<div class="main-feature">
@@ -58,7 +62,7 @@
 		</div>
 		<!-- Bottom -->
 		<div class="bottom-feature">
-			<a href="">
+			<a href="#porjectsId">
 			MORE PROJECTS
 			<i class="fa fa-angle-double-down" aria-hidden="true"></i>
 			</a>
@@ -71,19 +75,26 @@
 			<input type="text" placeholder="Full Name"></input>
 			<input type="email" placeholder="Email Address"></input>
 			<textarea rows="5" placeholder="Message"></textarea>
-			<button type="button">Send</button>
+			<button type="button">SEND</button>
 		</form>
 	</section>
 	<!-- Footer -->
-	<footer>
-		<a href=""><img src="img/facebook.png"></a>
-		<a href=""><img src="img/instagram.png"></a>
-		<a href=""><img src="img/pinterest.png"></a>
-		<a href=""><img src="img/twitter.png"></a>
+	<footer id="social">
+		<img src="img/facebook.png">
+		<img src="img/instagram.png">
+		<img src="img/pinterest.png">
+		<img src="img/twitter.png">
 	</footer>
 	<!-- Jquery Script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- Jquery script for smooth scrolling on a link -->
+	<script>
+		$('a[href*="#"]').click(function(event){
+    		$('html, body').animate({
+        	scrollTop: $( $.attr(this, 'href') ).offset().top
+    		}, 400);
+		   	event.preventDefault();
+		});
+	</script>
 </body>
 </html>
