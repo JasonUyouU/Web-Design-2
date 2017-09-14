@@ -1,3 +1,80 @@
+@media (max-width: 750px) {
+	header#intro h1 {
+		font-size: 50px;
+
+	}
+}
+@media (max-width: 650px) {
+	nav {
+		text-align: center;
+	}
+	a.logo {
+		display: none;
+	}
+	header#intro h1 {
+		font-size: 30px;
+		padding-top: 200px;
+	}
+	ul.sitenav {
+		float:none;
+		margin-right: 0;
+	}
+	section#explore p {
+		font-size: 12px;
+	}
+	section#projects p {
+		font-size: 8px;
+	}
+	section#projects div.title {
+		font-size: 18px;
+	}
+}
+@media (max-width: 460px) {
+	ul.sitenav li a {
+		padding: 16px 10px;
+		font-size: 14px;
+	}
+	header#intro {
+		height: 400px;
+	}
+	header#intro h1 {
+		padding-top: 100px;
+	}
+	section#explore h1 {
+		font-size: 14px;
+	}
+	section#projects p {
+		display: none;
+	}
+	section#projects {
+		height: 350px;
+	}
+	section#projects div.main-feature {
+		height: 300px;
+	}
+	section#projects div.side-feature {
+		height: 150px;
+	}
+	section#contact h1 {
+		font-size: 14px;
+	}
+	section#contact form > input,
+	section#contact form > textarea {
+		font-size: 8px;
+	}
+	footer#social {
+		height: 100px;
+	}
+	footer#social img {
+		height: 25px;
+		width: 25px;
+	} 
+}
+@media (max-width: 325px) {
+		header#intro h1 {
+		font-size: 20px;
+	}
+}
 * {
 	border: 0;
 	margin: 0;
@@ -39,7 +116,7 @@ nav {
 /*repositioning the ME to be centered*/
 a.logo span:first-child {
 	left: 6px;
-	position: relative;
+
 }
 .sitenav {
 	display: inline-block;
@@ -67,9 +144,9 @@ a.logo span:first-child {
 	background-image: url(../img/background.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	width: 100%;
 	color: #fff;
-	min-height: 600px;
-	position: relative;
+	height: 600px;
 	text-align: center;
 }
 #intro h1 {
