@@ -144,9 +144,10 @@ a.logo span:first-child {
 	background-image: url(../img/background.png);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	width: 100%;
 	color: #fff;
-	height: 600px;
+	height: 800px;
 	text-align: center;
 }
 #intro h1 {
@@ -164,6 +165,10 @@ a.logo span:first-child {
 	padding: 10px 15px;
 	margin-bottom: 3%;
 }
+#intro button:hover {
+	padding: 15px 20px;
+	transition: .2s;
+}
 /*anchor to makesure the Navbar doesn't overlap the sections*/
 .anchor {
 	display:block;
@@ -175,6 +180,7 @@ a.logo span:first-child {
 	margin: 0 auto;
 	padding: 3% 0;
 	text-align: center;
+	height: 250px;
 	width: 60%;
 }
 #explore h1 {
@@ -194,6 +200,10 @@ a.logo span:first-child {
 	cursor: pointer;
 	padding: 10px 15px;
 }
+#explore button:hover {
+	padding: 15px 20px;
+	transition: .2s;
+}
 #projects {
 	color: #fff;
 	height: 600px;
@@ -206,7 +216,7 @@ a.logo span:first-child {
 }
 .main-feature div {
 	font-size: 14px;
-	margin: 50% 10% 3%;
+	margin: 35% 10% 3%;
 }
 .main-feature .title {
 	font-size: 30px;
@@ -231,7 +241,7 @@ a.logo span:first-child {
 .side-feature .title {
 	font-size: 30px;
 	letter-spacing: 2px;
-	margin: 20% 10% 0;
+	margin: 15% 10% 0;
 }
 .side-feature p {
 	font-size: 12px;
@@ -260,6 +270,7 @@ a.logo span:first-child {
 }
 #contact {
 	text-align: center;
+	height: 400px;
 }
 #contact h1 {
 	font-size: 30px;
@@ -284,6 +295,10 @@ a.logo span:first-child {
 	color: #fff;
 	cursor: pointer;
 	padding: 10px 15px;
+}
+#contact form button:hover {
+	padding: 15px 20px;
+	transition: .2s;
 }
 footer {
 	height: 200px;
